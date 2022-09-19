@@ -1,0 +1,113 @@
+//ABOUT ME SECTION
+#about-me{
+    @include flex-settings(column, center);
+    background-color: $main-color;
+    min-height: 100vh;
+}
+//About me info
+.my-info{
+    margin: 26px auto;
+    padding-bottom: 35px;
+    width: 100%;
+    max-width: 1080px;
+    border-bottom: 2px solid $third-color;
+
+    h2{
+        @include fonts(5rem, $text-color);
+        @include section-header-dsgn(1rem);
+    }
+    .profile-img{
+        width: 285px;
+        height: 285px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    p{
+        @include fonts(1.75rem, $text-color);
+        font-weight: map-get($font-weights, thin);
+        line-height: 1.8;
+        text-align: justify;
+    }
+}
+.about-me-container{
+    @include flex-center;
+    text-align: center;
+
+    p{
+        margin: 0 45px;
+    }
+}
+
+//About me skills info
+.my-skills{
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    top: -15px;
+
+    .skills-img{
+        width: 100%;
+        height: 150px;
+    }
+    h2{
+        @include fonts(5rem, $text-color);
+        @include section-header-dsgn(2rem);
+    }
+    p{
+        position: relative;
+        @include fonts(1.5rem, $text-color);
+        font-weight: map-get($font-weights, thin);
+        text-align: center;
+        top: -6px;
+        padding: 0 25px;
+    }
+}
+.my-skills-container{
+    @include grid-center;
+    padding: 3.5rem 0;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-flow: dense;
+    gap: 25px;
+
+    #sass-icon{
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+//FOR PHONE ONLY 600px and below.
+@include phone-only(mobile-xsm){
+    //ABOUT ME SECTION (MY INFO)
+    .my-info{
+        width: 85%;
+    }
+    .about-me-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 25px 0;
+
+        p{
+            margin: 30px 0;
+        }
+    }
+    //ABOUT ME SECTION (MY SKILLS)
+    .my-skills-container{
+        grid-template-columns: repeat(1, auto);
+    }  
+}
+
+@include tablet-device(tablet-sm, tablet-md){
+    //ABOUT ME SECTION (MY INFO)
+    .my-info{
+        width: 85%;
+    }
+    .about-me-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 25px 0;
+
+        p{
+            margin: 30px 0;
+        }
+    }
+}

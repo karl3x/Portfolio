@@ -1,0 +1,15 @@
+/*LANDING*/
+#landing-section{
+    @include flex-settings(column, center);
+    min-height: 100vh;
+    background-color: $landing-color;
+
+    h1{
+        @include fonts(7rem, $text-color);
+    }
+    p{
+        @include fonts(2.75rem, $third-color);
+        font-style: italic;
+        font-weight: map-get($font-weights, thin);
+    }
+}

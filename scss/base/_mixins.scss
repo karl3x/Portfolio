@@ -1,0 +1,31 @@
+//ADD-ONS
+@mixin center-settings{
+    align-items: center;
+    justify-content: center;
+}
+//TEXT AND FONTS
+@mixin fonts($value, $color){
+    font-size: $value;
+    font-family: $Poppins;
+    color: $color;
+}
+@mixin section-header-dsgn($value){
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: $value;
+}
+
+//DISPLAY
+@mixin flex-center(){
+    display: flex;
+    @include center-settings;
+}
+@mixin flex-settings($direction, $position: none){
+    @include flex-center;
+    text-align: $position;
+    flex-direction: $direction;
+}
+@mixin grid-center{
+    display: grid;
+    @include center-settings;
+}

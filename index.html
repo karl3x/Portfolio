@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello! I'm Karlo, Welcome to my Online Portfolio"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+    rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Welcome to my Online Portfolio</title>
+</head>
+<body>
+    <!--NAV-->
+    <nav id="navbar">
+        <div class="nav-links">
+            <ul>
+                <li><a href="#landing-section">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+        <a class="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </nav>
+    
+    <main>
+        <section id="landing-section">
+            <h1>Hello! I'm Karlo</h1>
+            <p>I'm a junior front-end developer</p>
+        </section>
+
+        <section id="about-me">
+            <div class="reveal">
+                <div class="my-info">
+                    <h2>About me</h2>
+                    <div class="about-me-container">
+                        <img 
+                        src="img/my_picture.jpg" 
+                        class="profile-img" 
+                        alt="Profile Picture" 
+                        loading="lazy"
+                        />
+                        <p>Hi! My name is Karlo C. Estaño, 
+                            I'm a Bachelor of Science in Information Technology (BSIT) graduate at STI College Bacoor. 
+                            I'm interested in Front-end Development and trying to improve my skills at it (HTML5, CSS3/SASS, and JavaScript) by doing random projects that I like
+                            and also by watching tutorials/courses at youtube. In addition to this, whenever I have free time I enjoy watching streamers, 
+                            reading random things that I find interesting, and playing video games.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="my-skills">
+                    <h2>My Skills</h2>
+                    <div class="my-skills-container">
+                        <img 
+                        src="img/html.png" 
+                        class="skills-img"
+                        id="html-icon" 
+                        alt="HTML5 Icon" 
+                        loading="lazy"
+                        />
+                        <img 
+                            src="img/css.png" 
+                            class="skills-img" 
+                            id="css-icon"
+                            alt="CSS Icon" 
+                            loading="lazy"
+                        />
+                        <img 
+                            src="img/javascript.png" 
+                            class="skills-img" 
+                            id="javascript-icon"
+                            alt="JavaScript Icon" 
+                            loading="lazy"
+                        />
+                        <img 
+                            src="img/sass.png" 
+                            class="skills-img" 
+                            id="sass-icon"
+                            alt="Saas Icon" 
+                            loading="lazy"
+                        />
+                    </div>
+                    <p>Icons made by Freepik from www.flaticon.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="reveal">
+                <h2 class="projects-section-header">My Projects</h2>
+                <div class="projects-container">
+                    <!--FIRST PROJECT--> 
+                    <a 
+                        href="https://codepen.io/karl3x/pen/LYmbBxx" 
+                        target="_blank" 
+                        class="project"
+                    >
+                        <img 
+                            src="img/project-1.png"  
+                            class="project-img" 
+                            alt="Project #1" 
+                            loading="lazy"
+                        />
+                        <p class="project-title">
+                            <span class="code">&lt;</span>
+                            Survey Form
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>  
+                    
+                    <!--SECOND PROJECT-->
+                    <a 
+                        href="https://mega.nz/folder/FskGQYbQ#uKRMsDbrkkerq3ip2NN9jw" 
+                        target="_blank" 
+                        class="project"
+                    >
+                        <img 
+                            src="img/project-2.png" 
+                            class="project-img" 
+                            alt="Project #2" 
+                            loading="lazy"
+                        />
+                        <p class="project-title">
+                            <span class="code">&lt;</span>
+                            STI Pre-Enrollment System
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>
+                    
+                    <!--THIRD PROJECT-->
+                    <a 
+                        href="https://codepen.io/karl3x/pen/VwxmGrq" 
+                        target="_blank" 
+                        class="project"
+                    >
+                        <img 
+                            src="img/project-3.png" 
+                            class="project-img" 
+                            alt="Project #3" 
+                            loading="lazy"
+                        />
+                        <p class="project-title">
+                            <span class="code">&lt;</span>
+                            Product Landing Page
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>
+                </div>
+                <a
+                    href="https://codepen.io/karl3x/"
+                    class="btn btn-see-all"
+                    target="_blank"
+                    >See all<i class="fas fa-chevron-right" id="btn-icon"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="reveal">
+                <div class="contacts-container">
+                    <h2>Let's Stay Connected...</h2>
+                    <div class="contact-info-container">
+                        <i class="fas fa-mobile-alt" id="mobile-info"><span>+63 919 123 4567</span></i>
+                        <i class="fas fa-at" id="email-info"><span>sample@gmail.com</span></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="socials">
+            <div class="socials-container">
+                <a href="https://github.com/karl3x" target="_blank">
+                    <img 
+                        src="img/github.png" 
+                        class="socials-icon"
+                        alt="Github Icon"
+                        loading="lazy"
+                    />
+                </a>
+
+                <a href="https://www.facebook.com/qarl.x/" target="_blank">
+                    <img 
+                        src="img/facebook.png" 
+                        class="socials-icon"
+                        alt="Github Icon"
+                        loading="lazy"
+                    />
+                </a>
+
+                <a href="https://www.linkedin.com/in/karlo-esta%C3%B1o-26a6a4250/" target="_blank">
+                    <img 
+                        src="img/linkedin.png" 
+                        class="socials-icon"
+                        alt="Github Icon"
+                        loading="lazy"
+                    />
+                </a>
+            </div>
+        </footer>
+    </main>
+
+    <!--SCRIPT-->
+    <script src="js/nav.js"></script>
+    <script src="js/scroll-reveal.js"></script>
+</body>
+</html>

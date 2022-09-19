@@ -1,0 +1,38 @@
+//CONTACTS SECTION
+#contacts{
+    @include flex-settings(column, center);
+    min-height: 100vh;
+    background-color: $main-color;
+}
+.contacts-container h2{
+    @include fonts(6rem, $text-color);
+    font-weight: map-get($font-weights, bold);
+    font-style: italic;
+    text-align: center;
+}
+.contact-info-container{
+    @include flex-center;
+    margin: 25px 0;
+
+    span{
+        @include fonts(2rem, $text-color);
+        font-weight: map-get($font-weights, normal);
+        padding: 0 10px;
+    }
+}
+#mobile-info, #email-info{
+    font-size: 2.5rem;
+    color: $text-color;
+    padding: 0.2rem;
+}
+
+//FOR PHONE ONLY 600px and below.
+@include phone-only(mobile-xsm){
+    //CONTACT SECTION
+    .contact-info-container{
+        flex-wrap: wrap;
+    }
+    #mobile-info, #email-info{
+        margin: 20px 10px;
+    }
+}

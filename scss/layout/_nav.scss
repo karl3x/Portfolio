@@ -1,0 +1,201 @@
+/*NAV BAR*/
+#navbar{
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $third-color;
+    border-bottom: 2px solid black;
+    padding: 15px 20px;
+    z-index: 5;
+
+    .nav-links ul{
+        display: flex;
+        list-style: none;
+    
+        a{
+            display: inline-block;
+            padding: 0 20px;
+            @include fonts(3rem, $fourth-color); 
+            letter-spacing: 1.2px;
+            text-decoration: none;
+            cursor: pointer;
+    
+            &:hover{
+                color: $text-color;
+                opacity: 0.8;
+            }
+            &:visited{
+                color: $text-color;
+            }
+            &::after{
+                display: block;
+                content: "";
+                background-color: $fourth-color;
+                height: 3px;
+                width: 0%;
+                left: 0;
+                top: 52px;
+                transition: 0.3s;
+            }
+            &:hover::after{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.toggle{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0.75rem;
+    right: 1rem;
+    width: 30px;
+    height: 21px;
+    transition: .1s ease-in-out;
+
+    &:hover{
+        opacity: 0.8;
+    }
+        
+    .bar{
+        height: 3px;
+        width: 100%;
+        background-color: $fourth-color;
+    }
+}
+    
+.active-menu{
+    transform: rotate(-90deg);
+    transition: .1s ease-in-out
+}
+
+//FOR PHONE ONLY 600px and below.
+@include phone-only(mobile-xsm){
+    html{
+        font-size: 50%;
+        scroll-padding: 52px;
+    }
+    //RESPONSIVE NAVIGATION BAR
+    #navbar{
+        justify-content: flex-start;
+        padding: 25px 0;
+        margin: 0;
+
+        .nav-links{
+            ul{
+                display: block;
+                margin: 20px 0;
+            }
+            a{
+                padding: 12px 20px;
+                margin: 6px 0;
+            }
+        }
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    .toggle{
+        display: flex;
+        margin: 8px 8px 0 0;
+    }
+}
+
+@include tablet-device(tablet-sm, tablet-md){
+    //RESPONSIVE NAVIGATION BAR
+    #navbar{
+        justify-content: flex-start;
+        padding: 25px 0;
+        margin: 0;
+
+        .nav-links{
+            ul{
+                display: block;
+                margin: 20px 0;
+            }
+            a{
+                padding: 12px 20px;
+                margin: 6px 0;
+            }
+        }
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    .toggle{
+        display: flex;
+        margin: 8px 8px 0 0;
+    }
+}
+
+@include small-screens(screen-sm, screen-md){
+    //RESPONSIVE NAVIGATION BAR
+    #navbar{
+        justify-content: flex-start;
+        padding: 25px 0;
+        margin: 0;
+
+        .nav-links{
+            ul{
+                display: block;
+                margin: 20px 0;
+            }
+            a{
+                padding: 12px 20px;
+                margin: 6px 0;
+            }
+        }
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    .toggle{
+        display: flex;
+        margin: 8px 8px 0 0;
+    }
+}
+
+@include desktop-screens(screen-l, screen-xl){
+    //RESPONSIVE NAVIGATION BAR
+    #navbar{
+        justify-content: flex-start;
+        padding: 25px 0;
+        margin: 0;
+
+        .nav-links{
+            ul{
+                display: block;
+                margin: 20px 0;
+            }
+            a{
+                padding: 12px 20px;
+                margin: 6px 0;
+            }
+        }
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    .toggle{
+        display: flex;
+        margin: 8px 8px 0 0;
+    }
+}
+
